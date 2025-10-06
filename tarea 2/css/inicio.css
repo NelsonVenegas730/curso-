@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+
+body {
+  background: url("/imagenes/fondo.png.png") no-repeat center center/cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 0;
+}
+
+
+.encabezado {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu li {
+  cursor: default;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.contenido {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.bienvenida h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+
+.programas h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cards article {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cards article:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.cards h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ff0;
+}
+
+
+.pie {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ddd;
+}

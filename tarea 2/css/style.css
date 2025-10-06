@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo */
+.hero {
+  background: url('/imagenes/fondo.png.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Oscurece un poco para dar contraste */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Título con degradado rasta */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0f0 0%, #ff0 50%, #f00 100%);
+ -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+}
+
+/* Subtítulo */
+p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+/* Botón */
+.btn {
+  background: linear-gradient(90deg, #0f0, #ff0, #f00);
+  color: #000;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}

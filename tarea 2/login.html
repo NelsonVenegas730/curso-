@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Mad Vibes Radio</title>
+  <link href="imagenes/favicon.png" rel="icon">      
+  <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+  <section class="login-container">
+    <h1 class="titulo">Mad Vibes Radio</h1>
+    <p class="subtitulo">Acceso a la emisora</p>
+
+    <form id="loginForm">
+      <fieldset>
+        <legend>Identificación</legend>
+
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
+
+        <button type="submit" class="btn-ingresar">Iniciar sesión</button>
+      </fieldset>
+    </form>
+  </section>
+
+  
+  <script src="js/login.js"></script>
+</body>
+</html>
