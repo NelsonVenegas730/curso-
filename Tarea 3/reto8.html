@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reto 8 - Registro de Notas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <h1>Haz clic en una de las zonas numeradas para ver su descripción.</h1>
+    <nav>
+        <a href="reto7.html">&laquo; Anterior</a>
+        <a href="reto9.html">Siguiente &raquo;</a>
+    </nav>
+    <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+    <input type="number" id="notaEstudiante" placeholder="Nota">
+    <button id="guardarNota">Guardar</button>
+
+    <select id="listaEstudiantes">
+        <option value="">-- Consultar estudiante --</option>
+    </select>
+
+    <div id="notaMostrada"></div>
+
+
+
+    <a href="index.html" class="volver">⬅ Volver al menú</a>
+
+    <script src="js/reto8.js"></script>
+
+    <footer class="footer">
+        <p>Curso fundamentos de programacion web</p>
+    </footer>
+
+
+</body>
+
+</html>

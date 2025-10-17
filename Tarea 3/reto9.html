@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reto 9 - Votacion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <h1>Votacion Dinamica.</h1>
+    <nav>
+        <a href="reto8.html">&laquo; Anterior</a>
+        <a href="reto10.html">Siguiente &raquo;</a>
+    </nav>
+    <input type="text" id="nombre" placeholder="Nombre completo">
+    <input type="text" id="cedula" placeholder="Cédula">
+    <input type="email" id="correo" placeholder="Correo electrónico">
+    <input type="date" id="nacimiento">
+
+    <select id="opcionVoto">
+        <option value="">-- Selecciona fecha --</option>
+        <option value="10 octubre">10 octubre</option>
+        <option value="15 octubre">15 octubre</option>
+    </select>
+
+    <button id="enviarVoto">Enviar</button>
+    <div id="resultadoVoto"></div>
+
+
+
+    <a href="index.html" class="volver">⬅ Volver al menú</a>
+
+    <script src="js/reto9.js"></script>
+
+    <footer class="footer">
+        <p>Curso fundamentos de programacion web</p>
+    </footer>
+
+
+</body>
+
+</html>

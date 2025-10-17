@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reto 7 - Mapa interactivo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <h1>Haz clic en una de las zonas numeradas para ver su descripción.</h1>
+    <nav>
+        <a href="reto6.html">&laquo; Anterior</a>
+        <a href="reto8.html">Siguiente &raquo;</a>
+    </nav>
+    <img src="imagenes/mapa.jpg" usemap="#zona" style="max-width:100%;border:2px solid #00ffea;border-radius:8px;"
+        shape="rect">
+
+    <map name="zona">
+        <area alt="Punto de información" title="Punto de información" coords="404,524,295,367" shape="rect"
+            onclick="mostrarDescripcion('info')">
+        <area alt="Ascensores" title="Ascensores" coords="72,84,126,194" shape="rect"
+            onclick="mostrarDescripcion('ascensores')">
+        <area alt="Cafetería" title="Cafetería" coords="310,207,29" shape="circle"
+            onclick="mostrarDescripcion('cafeteria')">
+        <area alt="Farmacia" title="Farmacia" coords="491,104,39" shape="circle"
+            onclick="mostrarDescripcion('farmacia')">
+        <area alt="Ascensores" title="Ascensores" coords="296,256,18" shape="circle"
+            onclick="mostrarDescripcion('ascensores')">
+        <area alt="Punto de información" title="Punto de información" coords="282,273,307,293" shape="rect"
+            onclick="mostrarDescripcion('info')">
+        <area alt="Ascensores" title="Ascensores" coords="94,223,19" shape="circle"
+            onclick="mostrarDescripcion('ascensores')">
+        <area alt="Farmacia" title="Farmacia" coords="179,274,209,302" shape="rect"
+            onclick="mostrarDescripcion('farmacia')">
+    </map>
+
+    
+    <a href="index.html" class="volver">⬅ Volver al menú</a>
+
+    <script src="js/reto7.js"></script>
+
+    <footer class="footer"> 
+        <p>Curso fundamentos de programacion web</p>
+    </footer>
+
+
+</body>
+
+</html>

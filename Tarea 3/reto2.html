@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto2 factura</title>
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Reto #2 - Factura Digital</h2>
+    </header>
+    <nav>
+        <a href="reto1.html">&laquo; Anterior</a>
+        <a href="reto3.html">Siguiente &raquo;</a>
+    </nav>
+
+    <div class="container">
+        <input id="cliente" type="text" placeholder="Nombre del cliente">
+        <input id="articulo" type="text" placeholder="Artículo o servicio">
+        <input id="cantidad" type="number" min="1" placeholder="Cantidad">
+        <input id="precio" type="number" min="0" step="0.01" placeholder="Precio unitario (₡)">
+        <div style="display:flex;justify-content:center;gap:12px;margin-top:10px;">
+            <button id="btnFacturar">Generar Factura</button>
+            <button id="btnBorrar" class="borrar">Borrar</button>
+        </div>
+
+        <div id="resultadoFactura" class="resultado" style="margin-top:18px;"></div>
+    </div>
+
+
+    <a href="index.html" class="volver">⬅ Volver al menú</a>
+
+    <script src="js/reto2.js"></script>
+
+    <footer class="footer">
+        <p>Curso fundamentos de programacion web</p>
+    </footer>
+</body>
+
+</html>

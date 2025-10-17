@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reto 3 - Combo Interactivo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="imagenes/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <h1>🌐 Combo Interactivo</h1>
+  <nav>
+    <a href="reto2.html">&laquo; Anterior</a>
+    <a href="reto4.html">Siguiente &raquo;</a>
+  </nav>
+
+  <div class="container">
+    <select id="opciones">
+      <option value="">-- Selecciona un sitio --</option>
+      <option value="https://www.novacinemas.cr/">Nova Cinemas</option>
+      <option value="https://www.nasa.gov/">NASA</option>
+      <option value="https://www.wikipedia.org/">Wikipedia</option>
+      <option value="https://www.google.com/">Google</option>
+      <option value="https://www.youtube.com/">YouTube</option>
+    </select>
+
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:12px;">
+      <button id="btnIr">Abrir sitio</button>
+      <button id="btnCopiar" class="borrar">Copiar enlace</button>
+    </div>
+  </div>
+
+  <a href="index.html" class="volver">⬅ Volver al menú</a>
+
+  <script src="js/reto3.js"></script>
+
+  <footer class="footer">
+    <p>Curso fundamentos de programacion web</p>
+  </footer>
+
+  
+</body>
+</html>
