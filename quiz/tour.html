@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Virtual - Florencia</title>
+    <link rel="stylesheet" href="css/tour.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        #tour_Container {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+
+    <!-- THREE.js r105 (compatible con PANOLENS) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.105.2/build/three.min.js"></script>
+
+    <!-- PANOLENS -->
+    <script src="https://cdn.jsdelivr.net/npm/panolens@0.12.0/build/panolens.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado con estilo italiano -->
+    <header class="fondo">
+        <h1 class="titulo-italia">La città di Firenze</h1>
+    </header>
+
+    <!-- Contenedor del visor panorámico -->
+    <div id="tour_Container"></div>
+
+    <!-- Scripts personalizados -->
+    <script src="js/tour.js"></script>
+    <!--<script src="js/mapper.js"></script>-->
+
+</body>
+
+</html>
